@@ -8,11 +8,19 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./hero.css');
+@import url('./concept.css');
+@import url('./how-to-play.css');
+@import url('./core-features.css');
+@import url('./commanders.css');
+@import url('./gallery.css');
+@import url('./player-reviews.css');
+@import url('./faq.css');
 @import url('./footer.css');
+
+/* Legal pages */
+@import url('./privacy-page.css');
+@import url('./terms-page.css');
