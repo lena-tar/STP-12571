@@ -1,0 +1,137 @@
+.player-reviews-container {
+  padding: 32px 4px;
+  border-left: 4px solid var(--neutralcolor-neutral10);
+  border-right: 4px solid var(--neutralcolor-neutral10);
+}
+
+.player-reviews-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 90px;
+}
+
+.section-icon-mob {
+  display: flex;
+  position: absolute;
+  top: 74%;
+}
+
+.player-reviews-list {
+  margin-left: 4px;
+}
+
+.player-reviews-title {
+  max-width: 160px;
+  font-size: 38px;
+  line-height: 1.21053;
+  letter-spacing: 0em;
+  color: var(--text-text-100);
+  text-align: center;
+  -webkit-text-stroke: 6px var(--text-dark-text-dark-100);
+  text-shadow:
+    -2px -2px 0 var(--text-dark-text-dark-100),
+    2px 2px 0 var(--text-dark-text-dark-100) #221302;
+  paint-order: stroke fill;
+}
+
+.section-icon-decktop {
+  display: none;
+}
+
+.swiper-slide {
+  height: auto;
+  display: flex;
+}
+
+.review-card {
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: var(--neutralcolor-neutral10);
+  border-radius: 30px;
+  width: 100%;
+}
+
+.review-title {
+  line-height: 1.375;
+  letter-spacing: 0.03em;
+  padding-left: 15px;
+  margin-bottom: 8px;
+  font-family: var(--second-family);
+  font-size: 16px;
+  min-height: 88px;
+}
+
+.review-subbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review-name {
+  line-height: 1.375;
+  letter-spacing: 0.03em;
+  color: var(--text-dark-text-dark-100);
+}
+
+.review-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .player-reviews-container {
+    padding: 50px 0;
+    border-left: 10px solid var(--neutralcolor-neutral10);
+    border-right: 10px solid var(--neutralcolor-neutral10);
+  }
+  .player-reviews-title-box {
+    margin-bottom: 160px;
+  }
+  .player-reviews-title {
+    max-width: 294px;
+    font-size: 72px;
+    line-height: 1.11;
+    -webkit-text-stroke: 8px var(--text-dark-text-dark-100);
+    text-shadow:
+      -2px -2px 0 var(--text-dark-text-dark-100),
+      2px 2px 0 var(--text-dark-text-dark-100) #221302;
+    paint-order: stroke fill;
+  }
+  .section-icon-mob {
+    display: none;
+  }
+  .section-icon-decktop {
+    display: flex;
+    position: absolute;
+    top: 70%;
+  }
+  .player-reviews-list {
+    margin-left: 30px;
+  }
+  .review-card {
+    padding: 32px;
+    border-radius: 50px;
+    box-shadow: -10px 10px 10px 0 rgba(34, 19, 2, 0.25);
+  }
+  .review-title {
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+    min-height: 120px;
+    max-width: 286px;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+  .review-name {
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.01em;
+  }
+  .swiper-wrapper {
+  padding-bottom: 20px;
+}
+}
