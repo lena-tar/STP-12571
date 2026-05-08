@@ -7,6 +7,7 @@
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');
+@import url('./container.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -19,6 +20,7 @@
 @import url('./player-reviews.css');
 @import url('./faq.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 /* Legal pages */
 @import url('./privacy-page.css');
