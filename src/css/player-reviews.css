@@ -2,6 +2,7 @@
   padding: 32px 4px;
   border-left: 4px solid var(--neutralcolor-neutral10);
   border-right: 4px solid var(--neutralcolor-neutral10);
+        box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
 }
 
 .player-reviews-title-box {
