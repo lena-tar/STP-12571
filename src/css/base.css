@@ -67,32 +67,15 @@ h3 {
 
 body {
   box-sizing: border-box;
-
-  border-left: 4px solid var(--neutralcolor-neutral0);
-  border-right: 4px solid var(--neutralcolor-neutral0);
-
-  min-width: 320px;
-  max-width: 375px;
+  min-width: 100vw;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 12px;
-
   font-size: 16px;
   font-family: var(--font-family);
   line-height: 1.5;
   font-weight: 400;
   color: #242424;
-
   background-color: var(--background-clr);
-}
-
-@media only screen and (min-width: 1440px) {
-  body {
-    border-left: 10px solid var(--neutralcolor-neutral0);
-    border-right: 10px solid var(--neutralcolor-neutral0);
-
-    min-width: 1312px;
-    padding: 0 40px;
-  }
 }
 
 .section {
@@ -103,7 +86,4 @@ body {
   .section {
     margin-top: 50px;
   }
-}
-
-.container {
 }

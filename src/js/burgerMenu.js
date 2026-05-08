@@ -1,11 +1,26 @@
-const openBtnEl = document.querySelector('[data-action="open"]');
-const closeBtnEl = document.querySelector('[data-action="close"]');
-const burgerMenuEl = document.querySelector('[data-visible]');
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-open-mobnav]'),
+    closeModalBtn: document.querySelector('[data-close-mod]'),
+    modal: document.querySelector('[data-modal-mobnav]'),
+    menuLinks: document.querySelectorAll('[data-modal-mobnav] a'),
+  };
 
-openBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'open';
-});
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.modal.addEventListener('click', onBackdropClick);
 
-closeBtnEl.addEventListener('click', e => {
-  burgerMenuEl.dataset.visible = 'close';
-});
+  refs.menuLinks.forEach(link => {
+    link.addEventListener('click', toggleModal);
+  });
+
+  function toggleModal() {
+    refs.modal.classList.toggle('isopen');
+  }
+
+  function onBackdropClick(event) {
+    if (event.target === refs.modal) {
+      toggleModal();
+    }
+  }
+})();
