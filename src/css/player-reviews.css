@@ -2,7 +2,7 @@
   padding: 32px 4px;
   border-left: 4px solid var(--neutralcolor-neutral10);
   border-right: 4px solid var(--neutralcolor-neutral10);
-        box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
+  box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
 }
 
 .player-reviews-title-box {
@@ -27,7 +27,6 @@
   position: absolute;
   top: 74%;
 }
-
 
 .player-reviews-list {
   margin-left: 4px;
@@ -142,6 +141,6 @@
     letter-spacing: 0.01em;
   }
   .swiper-wrapper {
-  padding-bottom: 20px;
-}
+    padding-bottom: 20px;
+  }
 }

@@ -1,3 +1,22 @@
+.concept-section {
+  margin: 0 auto;
+}
+
+.concept-container {
+  padding: 32px 12px;
+
+  border-left: 4px solid var(--neutralcolor-neutral10);
+  border-right: 4px solid var(--neutralcolor-neutral10);
+  box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
+}
+
+@media only screen and (min-width: 1440px) {
+  .concept-container {
+    border-left: 10px solid var(--neutralcolor-neutral10);
+    border-right: 10px solid var(--neutralcolor-neutral10);
+  }
+}
+
 .concept-title {
   font-family: var(--second-family);
   font-weight: 400;
@@ -21,7 +40,7 @@
     font-size: 64px;
     line-height: 113%;
 
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 8px var(--text-dark-text-dark-100);
   }
 }
 
