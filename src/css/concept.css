@@ -1,0 +1,44 @@
+.concept-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 121%;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text-text-100);
+
+  -webkit-text-stroke: 6px var(--text-dark-text-dark-100);
+  text-shadow:
+    -2px -2px 0 var(--text-dark-text-dark-100),
+    2px 2px 0 var(--text-dark-text-dark-100);
+  paint-order: stroke fill;
+
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .concept-title {
+    font-size: 64px;
+    line-height: 113%;
+
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
+.concept-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+  letter-spacing: 0.03em;
+  color: var(--text-dark-text-dark-100);
+}
+
+@media only screen and (min-width: 1440px) {
+  .concept-text {
+    font-size: 30px;
+    line-height: 127%;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

@@ -1,13 +1,56 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+  --font-family: 'Lilita One', sans-serif;
+  --second-family: 'Luckiest Guy', sans-serif;
+  --third-family: 'Roboto', sans-serif;
+  --font3: 'Arial', sans-serif;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --img-wareframe: #404b4b;
+  --background-clr: #e1ba8a;
+  --text-dark-text-dark-100: #221302;
+  --text-dark-text-dark-90: rgba(34, 19, 2, 0.9);
+  --text-dark-text-dark-80: rgba(34, 19, 2, 0.8);
+  --text-dark-text-dark-70: rgba(34, 19, 2, 0.7);
+  --text-dark-text-dark-60: rgba(34, 19, 2, 0.6);
+  --text-dark-text-dark-50: rgba(34, 19, 2, 0.5);
+  --text-dark-text-dark-40: rgba(34, 19, 2, 0.4);
+  --text-dark-text-dark-30: rgba(34, 19, 2, 0.3);
+  --text-dark-text-dark-20: rgba(34, 19, 2, 0.2);
+  --text-dark-text-dark-10: rgba(34, 19, 2, 0.1);
+  --text-text-100: #f3e5d6;
+  --text-text-90: rgba(243, 229, 214, 0.9);
+  --text-text-80: rgba(243, 229, 214, 0.8);
+  --text-text-70: rgba(243, 229, 214, 0.7);
+  --text-text-60: rgba(243, 229, 214, 0.6);
+  --text-text-50: rgba(243, 229, 214, 0.5);
+  --text-text-40: rgba(243, 229, 214, 0.4);
+  --text-text-30: rgba(243, 229, 214, 0.3);
+  --text-text-20: rgba(243, 229, 214, 0.2);
+  --text-text-10: rgba(243, 229, 214, 0.1);
+  --primary-primary100: #edbc84;
+  --primary-primary90: rgba(237, 188, 132, 0.9);
+  --primary-primary80: rgba(237, 188, 132, 0.8);
+  --primary-primary70: rgba(237, 188, 132, 0.7);
+  --primary-primary60: rgba(237, 188, 132, 0.6);
+  --primary-primary50: rgba(237, 188, 132, 0.5);
+  --primary-primary40: rgba(237, 188, 132, 0.4);
+  --primary-primary30: rgba(237, 188, 132, 0.3);
+  --primary-primary20: rgba(237, 188, 132, 0.2);
+  --primary-primary10: rgba(237, 188, 132, 0.1);
+  --additional-additional100: #fc8a10;
+  --accent-1-accent-1-100: #27c8c7;
+  --accent-2-accent-2-100: #65b93c;
+  --accent-3-accent-3-100: #9f77e6;
+  --neutralcolor-netural100: #171515;
+  --neutralcolor-neutral90: #1a1a1a;
+  --neutralcolor-neutral80: #333;
+  --neutralcolor-neutral70: #4d4d4d;
+  --neutralcolor-neutral60: #666;
+  --neutralcolor-neutral50: #808080;
+  --neutralcolor-neutral40: #999;
+  --neutralcolor-neutral30: #b3b3b3;
+  --neutralcolor-neutral20: #ccc;
+  --neutralcolor-neutral10: #e5e5e5;
+  --neutralcolor-neutral0: #fff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,17 +59,51 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh;
-  margin: 0;
+h1,
+h2,
+h3 {
+  font-family: var(--second-family);
 }
 
-main {
-  flex-grow: 1;
+body {
+  box-sizing: border-box;
+
+  border-left: 4px solid var(--neutralcolor-neutral0);
+  border-right: 4px solid var(--neutralcolor-neutral0);
+
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  font-size: 16px;
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #242424;
+
+  background-color: var(--background-clr);
 }
-main:has(.back-link) {
-  text-align: center;
+
+@media only screen and (min-width: 1440px) {
+  body {
+    border-left: 10px solid var(--neutralcolor-neutral0);
+    border-right: 10px solid var(--neutralcolor-neutral0);
+
+    min-width: 1312px;
+    padding: 0 40px;
+  }
+}
+
+.section {
+  margin-top: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    margin-top: 50px;
+  }
+}
+
+.container {
 }
