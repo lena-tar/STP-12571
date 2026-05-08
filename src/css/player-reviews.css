@@ -14,11 +14,20 @@
   margin-bottom: 90px;
 }
 
+/* .test-delete this {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+} */
+
 .section-icon-mob {
   display: flex;
   position: absolute;
   top: 74%;
 }
+
 
 .player-reviews-list {
   margin-left: 4px;
