@@ -122,6 +122,9 @@
     border-right: 10px solid var(--neutralcolor-neutral10);
     border-top: 10px solid var(--neutralcolor-neutral10);
     border-radius: 50px 50px 0 0;
+
+    max-width: 1312px;
+    margin: 0 auto;
   }
   .header-wrapper-box {
     justify-content: start;
