@@ -1,9 +1,10 @@
 .header {
   position: fixed;
   top: 0;
-  left: 7px;
+  left: 0;
   width: 100%;
   z-index: 100;
+  padding: 0 8px;
 }
 
 .nav-desktop {
@@ -20,6 +21,7 @@
 
   max-width: 1312px;
   margin: 0 auto;
+  /* box-shadow: 0px -20px 40px 0 var(--primary-primary100); */
 }
 .nav-mobile {
   display: flex;
@@ -52,6 +54,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .header {
+    left: 7px;
+  }
+
   .nav-mobile {
     display: none;
   }
