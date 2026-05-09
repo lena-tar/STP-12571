@@ -1,19 +1,22 @@
-.concept-section {
+.section-concept {
   margin: 0 auto;
+  scroll-margin-top: 104px;
 }
 
 .concept-container {
   padding: 32px 12px;
 
-  border-left: 4px solid var(--neutralcolor-neutral10);
+  /* border-left: 4px solid var(--neutralcolor-neutral10);
   border-right: 4px solid var(--neutralcolor-neutral10);
-  box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
+  box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40); */
 }
 
 @media only screen and (min-width: 1440px) {
   .concept-container {
-    border-left: 10px solid var(--neutralcolor-neutral10);
-    border-right: 10px solid var(--neutralcolor-neutral10);
+    /* border-left: 10px solid var(--neutralcolor-neutral10);
+    border-right: 10px solid var(--neutralcolor-neutral10); */
+
+    padding: 40px 64px;
   }
 }
 
