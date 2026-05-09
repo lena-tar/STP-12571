@@ -7,6 +7,7 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig(({ command }) => {
   return {
+    base: './',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
@@ -45,7 +46,7 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
       ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
+        exclude: /sprite.*\.svg/,
         png: {
           quality: 60,
         },
