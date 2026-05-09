@@ -1,0 +1,269 @@
+<section class="features-section">
+  <div class="container">
+    <div class="features-container">
+      <h2 class="features-title">Features</h2>
+
+      <p class="features-subtitle">What makes this game special</p>
+
+      <svg class="features-icon-mob" width="351" height="86">
+        <use href="/img/sprite.svg#icon-title"></use>
+      </svg>
+
+      <svg class="features-icon-desk" width="776" height="189">
+        <use href="/img/sprite.svg#icon-title"></use>
+      </svg>
+
+      <div class="features-flex-wrapper">
+        <div class="features-content">
+          <div class="feature-card active" id="card-pvp">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/features/desktop/img1.png    1x,
+                  /img/features/desktop/img1@2x.png 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                  /img/features/mobile/img1.png    1x,
+                  /img/features/mobile/img1@2x.png 2x
+                "
+              />
+
+              <img
+                class="features-img"
+                src="/img/features/mobile/img1.png"
+                alt="PvP"
+                width="100"
+                height="100"
+              />
+            </picture>
+
+            <h3 class="color-title orange">PvP Battles</h3>
+
+            <p class="features-text">
+              Battle actual people,<br />
+              not some predictable AI.
+            </p>
+          </div>
+
+          <div class="feature-card" id="card-kingdom">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/features/desktop/img2.png    1x,
+                  /img/features/desktop/img2@2x.png 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                  /img/features/mobile/img2.png    1x,
+                  /img/features/mobile/img2@2x.png 2x
+                "
+              />
+
+              <img
+                class="features-img"
+                src="/img/features/mobile/img2.png"
+                alt="Kingdom"
+                width="100"
+                height="100"
+              />
+            </picture>
+
+            <h3 class="color-title blue">Kingdom Management</h3>
+
+            <p class="features-text">
+              Balance economy<br />
+              and military.
+            </p>
+          </div>
+
+          <div class="feature-card" id="card-alliance">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/features/desktop/img3.png    1x,
+                  /img/features/desktop/img3@2x.png 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                  /img/features/mobile/img3.png    1x,
+                  /img/features/mobile/img3@2x.png 2x
+                "
+              />
+
+              <img
+                class="features-img"
+                src="/img/features/mobile/img3.png"
+                alt="Alliance"
+                width="100"
+                height="100"
+              />
+            </picture>
+
+            <h3 class="color-title green">Alliance System</h3>
+
+            <p class="features-text">
+              Form alliances that<br />
+              actually matter in battle.
+            </p>
+          </div>
+
+          <div class="feature-card" id="card-progress">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/features/desktop/img4.png    1x,
+                  /img/features/desktop/img4@2x.png 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                  /img/features/mobile/img4.png    1x,
+                  /img/features/mobile/img4@2x.png 2x
+                "
+              />
+
+              <img
+                class="features-img"
+                src="/img/features/mobile/img4.png"
+                alt="Progression System"
+                width="100"
+                height="100"
+              />
+            </picture>
+
+            <h3 class="color-title purple">Progression System</h3>
+
+            <p class="features-text">
+              Unlock stronger<br />
+              units and upgrades.
+            </p>
+          </div>
+
+          <div class="feature-card" id="card-warfare">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  /img/features/desktop/img5.png    1x,
+                  /img/features/desktop/img5@2x.png 2x
+                "
+              />
+
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                  /img/features/mobile/img5.png    1x,
+                  /img/features/mobile/img5@2x.png 2x
+                "
+              />
+
+              <img
+                class="features-img"
+                src="/img/features/mobile/img5.png"
+                alt="Large-Scale Warfare"
+                width="126"
+                height="100"
+              />
+            </picture>
+
+            <h3 class="color-title orange">Large-Scale Warfare</h3>
+
+            <p class="features-text">
+              Dive into massive wars where you're<br />
+              fighting alongside (and against)<br />
+              hundreds of real players.
+            </p>
+          </div>
+        </div>
+
+        <div class="features-menu">
+          <button class="feature-btn active" data-target="card-pvp">
+            <span>PvP Battles</span>
+
+            <div class="scroll-icons">
+              <svg class="features-closed icon-closed" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_rolled"></use>
+              </svg>
+
+              <svg class="features-open icon-open" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_unrolled"></use>
+              </svg>
+            </div>
+          </button>
+
+          <button class="feature-btn" data-target="card-kingdom">
+            <span>Kingdom Management</span>
+
+            <div class="scroll-icons">
+              <svg class="features-closed icon-closed" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_rolled"></use>
+              </svg>
+
+              <svg class="features-open icon-open" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_unrolled"></use>
+              </svg>
+            </div>
+          </button>
+
+          <button class="feature-btn" data-target="card-alliance">
+            <span>Alliance System</span>
+
+            <div class="scroll-icons">
+              <svg class="features-closed icon-closed" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_rolled"></use>
+              </svg>
+
+              <svg class="features-open icon-open" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_unrolled"></use>
+              </svg>
+            </div>
+          </button>
+
+          <button class="feature-btn" data-target="card-progress">
+            <span>Progression System</span>
+
+            <div class="scroll-icons">
+              <svg class="features-closed icon-closed" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_rolled"></use>
+              </svg>
+
+              <svg class="features-open icon-open" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_unrolled"></use>
+              </svg>
+            </div>
+          </button>
+
+          <button class="feature-btn" data-target="card-warfare">
+            <span>Large-Scale Warfare</span>
+
+            <div class="scroll-icons">
+              <svg class="features-closed icon-closed" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_rolled"></use>
+              </svg>
+
+              <svg class="features-open icon-open" width="60" height="60">
+                <use href="/img/sprite.svg#scroll_unrolled"></use>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
