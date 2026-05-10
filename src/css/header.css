@@ -94,8 +94,13 @@
     letter-spacing: 0.02em;
     color: var(--text-dark-text-dark-100);
     text-wrap: nowrap;
+    transition: transform 0.3 ease-in-out;
   }
   .menu-item-desktop a {
     padding: 11px 22px;
+  }
+  .menu-item-desktop:hover,
+  .menu-item-desktop:focus {
+    transform: scale(1.3);
   }
 }
