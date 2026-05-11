@@ -1,6 +1,6 @@
 .terms-container {
   position: relative;
-  padding: 28px 12px;
+  padding: 32px 12px;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -19,14 +19,13 @@
 }
 
 .terms-title {
-  min-width: 160px;
-  max-width: 171px;
+  max-width: 240px;
   margin: 76px auto 90px;
 }
 
 @media only screen and (min-width: 1440px) {
   .terms-title {
-    min-width: 393px;
+    min-width: 469px;
     margin: 86px auto 193px;
   }
 }
@@ -65,32 +64,21 @@
   }
 }
 
-.terms-icon-mob {
+.terms-icon {
   position: absolute;
+  width: 351px;
+  height: 86px;
   top: 178px;
-  left: 0;
-  min-width: 90%;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1440px) {
-  .terms-icon-mob {
-    display: none;
-  }
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.terms-icon-desk {
-  display: none;
-}
 @media only screen and (min-width: 1440px) {
-  .terms-icon-desk {
-    display: block;
-    position: absolute;
-    top: 250px;
-    left: 0;
-    width: 100%;
+  .terms-icon {
+    top: 230px;
+    width: 776px;
+    height: 189px;
   }
-}
-@media only screen and (min-width: 1440px) {
 }
 
 .terms-title-desk {

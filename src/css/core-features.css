@@ -5,7 +5,7 @@
 .features-container {
   position: relative;
   min-height: 876px;
-  padding: 50px 0;
+  padding: 32px 0;
 }
 
 .features-title,
@@ -39,8 +39,8 @@
 }
 
 .features-ornament {
-  max-width: 351px;
-  max-height: 86px;
+  width: 351px;
+  height: 86px;
   position: absolute;
   top: 13%;
   left: 50%;
@@ -180,6 +180,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .features-container {
+    padding: 50px 0;
+  }
+
   .features-title {
     font-size: 72px;
     line-height: 111%;
@@ -196,8 +200,8 @@
 
   .features-ornament {
     top: 15%;
-    min-width: 776px;
-    min-height: 189px;
+    width: 776px;
+    height: 189px;
   }
 
   .features-wrapper {
@@ -221,6 +225,8 @@
     height: 100px;
     width: 612px;
     margin-left: auto;
+
+    border-radius: 50px;
   }
 
   .feature-btn:hover,

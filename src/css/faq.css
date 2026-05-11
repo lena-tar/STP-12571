@@ -1,5 +1,5 @@
 .faq-section {
-  padding: 32px 8px;
+  padding: 32px 12px;
   scroll-margin-top: 104px;
 }
 
@@ -36,8 +36,8 @@
 }
 
 .faq-ornament {
-  max-width: 351px;
-  max-height: 86px;
+  width: 351px;
+  height: 86px;
   position: absolute;
   top: 85px;
   left: 50%;
@@ -164,6 +164,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .faq-section {
+    padding: 50px 30px;
+  }
+
   .faq-title {
     font-size: 72px;
     line-height: 111%;
@@ -179,8 +183,8 @@
   }
 
   .faq-ornament {
-    min-width: 776px;
-    min-height: 189px;
+    width: 776px;
+    height: 189px;
     top: 130px;
   }
 
@@ -191,6 +195,16 @@
   .faq-item {
     width: 606px;
     height: 110px;
+    transition:
+      border 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .faq-item:hover,
+  .faq-item:focus-visible {
+    box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40);
+    transform: translateX(5px);
   }
 
   .faq-question {
