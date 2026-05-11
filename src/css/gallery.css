@@ -1,13 +1,17 @@
 .gallery-section {
-  position: relative;
   padding: 32px 12px;
+  scroll-margin-top: 104px;
+}
+
+.gallery-container {
+  position: relative;
 }
 
 .gallery-ornament {
   width: 351px;
   height: 86px;
   position: absolute;
-  top: 85px;
+  top: 55px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -114,10 +118,14 @@
     padding: 50px 30px 30px;
   }
 
+  .gallery-container {
+    padding: 0 50px;
+  }
+
   .gallery-ornament {
     width: 776px;
     height: 189px;
-    top: 130px;
+    top: 80px;
   }
 
   .gallery-title {
