@@ -1,0 +1,151 @@
+.how-to-play-container {
+  padding: 32px 0 12px 0;
+}
+
+.how-to-play-title {
+  max-width: 249px !important;
+  text-wrap: nowrap;
+}
+
+.how-to-play-section-icon {
+  top: 64% !important;
+}
+
+.how-to-play-list {
+  display: grid;
+  grid-template-rows: repeat(2, 174px);
+  grid-auto-flow: column;
+  column-gap: 50px;
+  row-gap: 12px;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 12px 20px;
+}
+
+.how-to-play-list::-webkit-scrollbar {
+  display: none;
+}
+
+.how-to-play-card {
+  padding: 16px;
+  box-shadow: -10px 10px 10px 0 rgba(34, 19, 2, 0.25);
+  background-color: var(--additional-additional100);
+  width: 220px;
+  height: 174px;
+  border-radius: 30px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.how-to-play-card:nth-child(even) {
+  transform: translateX(135px);
+}
+
+.how-to-play-card-img {
+  width: 60px;
+}
+.how-to-play-card-img-map {
+  width: 96px;
+}
+
+.how-to-play-subtitle {
+  font-family: var(--second-family);
+  line-height: 1.375;
+  letter-spacing: 0.03em;
+  -webkit-text-stroke: 4px var(--text-dark-text-dark-100);
+  text-shadow:
+    -2px -2px 0 var(--text-dark-text-dark-100),
+    2px 2px 0 var(--text-dark-text-dark-100) #221302;
+  paint-order: stroke fill;
+}
+
+.green {
+  color: var(--accent-2-accent-2-100);
+}
+
+.orange {
+  color: var(--additional-additional100);
+}
+
+.blue {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.purple {
+  color: var(--accent-3-accent-3-100);
+}
+
+.how-to-play-text {
+  max-width: 180px;
+  line-height: 1.375;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--text-dark-text-dark-80);
+}
+
+@media only screen and (min-width: 1440px) {
+  .how-to-play-container {
+    padding: 50px 0 20px 0;
+  }
+  .how-to-play-title {
+    max-width: 469px !important;
+  }
+  .how-to-play-list {
+    display: grid;
+    grid-template-rows: repeat(2, 278px);
+    grid-auto-flow: column;
+    overflow: visible;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-content: center;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+  }
+  .how-to-play-card {
+    padding: 32px;
+    width: 330px;
+    height: 278px;
+    flex: none;
+  }
+  .how-to-play-card:nth-child(even) {
+    transform: translateX(215px);
+  }
+  .how-to-play-card:hover,
+  .how-to-play-card:focus {
+    transform: translateX(215px) scale(1.05) !important;
+    z-index: 10;
+  }
+  .how-to-play-card:nth-child(odd):hover,
+  .how-to-play-card:nth-child(odd):focus {
+    transform: scale(1.05) !important;
+    z-index: 10;
+  }
+  .how-to-play-card-img {
+    width: 100px;
+  }
+  .how-to-play-card-img-map {
+    width: 160px;
+  }
+  .how-to-play-subtitle {
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+  }
+  .how-to-play-text {
+    max-width: 230px;
+    font-size: 22px;
+    line-height: 1.36;
+    letter-spacing: 0.02em;
+  }
+  .how-to-play-list {
+    column-gap: 100px;
+    row-gap: 12px;
+  }
+}
