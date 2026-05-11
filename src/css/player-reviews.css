@@ -4,9 +4,6 @@
 
 .player-reviews-container {
   padding: 32px 0;
-  /* border-left: 4px solid var(--neutralcolor-neutral10);
-  border-right: 4px solid var(--neutralcolor-neutral10);
-  box-shadow: 0 0 20px 0 var(--text-dark-text-dark-40); */
 }
 
 .player-reviews-title-box {
@@ -18,8 +15,9 @@
   margin-bottom: 90px;
 }
 
-.section-icon-mob {
-  display: flex;
+.section-icon {
+  width: 351px;
+  height: 86px;
   position: absolute;
   top: 74%;
 }
@@ -40,10 +38,6 @@
     -2px -2px 0 var(--text-dark-text-dark-100),
     2px 2px 0 var(--text-dark-text-dark-100) #221302;
   paint-order: stroke fill;
-}
-
-.section-icon-decktop {
-  display: none;
 }
 
 .swiper-slide {
@@ -90,11 +84,9 @@
 @media only screen and (min-width: 1440px) {
   .player-reviews-container {
     padding: 50px 0;
-    /* border-left: 10px solid var(--neutralcolor-neutral10);
-    border-right: 10px solid var(--neutralcolor-neutral10); */
   }
   .player-reviews-title-box {
-    margin-bottom: 160px;
+    margin-bottom: 172px;
   }
   .player-reviews-title {
     max-width: 294px;
@@ -106,13 +98,9 @@
       2px 2px 0 var(--text-dark-text-dark-100) #221302;
     paint-order: stroke fill;
   }
-  .section-icon-mob {
-    display: none;
-  }
-  .section-icon-decktop {
-    display: flex;
-    position: absolute;
-    top: 70%;
+  .section-icon {
+    width: 776px;
+    height: 189px;
   }
   .player-reviews-list {
     margin-left: 30px;
