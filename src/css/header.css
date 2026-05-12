@@ -112,8 +112,7 @@
   .menu-item-desktop:focus,
   .menu-item-desktop.active,
   .menu-list-contacts div:hover,
-  .menu-list-contacts div:focus,
-  .menu-list-contacts div.active {
+  .menu-list-contacts div:focus {
     transform: scale(1.3);
     -webkit-text-stroke: 2px var(--text-text-100);
     text-shadow:
