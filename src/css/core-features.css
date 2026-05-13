@@ -106,10 +106,10 @@
   opacity: 1;
 }
 
-.feature-btn.active .icon-open {
+[data-feature-btn='active'] .icon-open {
   opacity: 1;
 }
-.feature-btn.active .icon-closed {
+[data-feature-btn='active'] .icon-closed {
   opacity: 0;
 }
 
@@ -134,7 +134,7 @@
   transition: opacity 0.3s ease;
 }
 
-.feature-card.active {
+[data-feature-card='active'] {
   opacity: 1;
   pointer-events: auto;
 }
@@ -265,7 +265,7 @@
     transition: transform 0.35s ease;
   }
 
-  .feature-card.active {
+  [data-feature-card='active'] {
     transform: translateX(0);
   }
 
