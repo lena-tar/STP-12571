@@ -18,9 +18,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/STP-12571/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/STP-12571/assets/styles-ywXUPXbg.js">
+    <link rel="modulepreload" crossorigin href="/STP-12571/assets/styles-BU-5qkja.js">
     <link rel="modulepreload" crossorigin href="/STP-12571/assets/vendor-Dq_ghqr5.js">
-    <link rel="stylesheet" crossorigin href="/STP-12571/assets/styles-BCuUO44U.css">
+    <link rel="stylesheet" crossorigin href="/STP-12571/assets/styles-BLa4gGB-.css">
     <link rel="stylesheet" crossorigin href="/STP-12571/assets/vendor-CFqjEoZd.css">
   </head>
   <body>
@@ -251,7 +251,11 @@
 
       <div class="features-flex-wrapper">
         <div class="features-content">
-          <div class="feature-card active" id="card-pvp">
+          <div
+            class="feature-card"
+            data-feature-card="active"
+            data-id="card-pvp"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -280,7 +284,11 @@
             </p>
           </div>
 
-          <div class="feature-card" id="card-kingdom">
+          <div
+            class="feature-card"
+            data-feature-card="inactive"
+            data-id="card-kingdom"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -309,7 +317,11 @@
             </p>
           </div>
 
-          <div class="feature-card" id="card-alliance">
+          <div
+            class="feature-card"
+            data-feature-card="inactive"
+            data-id="card-alliance"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -338,7 +350,11 @@
             </p>
           </div>
 
-          <div class="feature-card" id="card-progress">
+          <div
+            class="feature-card"
+            data-feature-card="inactive"
+            data-id="card-progress"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -367,7 +383,11 @@
             </p>
           </div>
 
-          <div class="feature-card" id="card-warfare">
+          <div
+            class="feature-card"
+            data-feature-card="inactive"
+            data-id="card-warfare"
+          >
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -401,7 +421,8 @@
         <div class="features-menu">
           <button
             type="button"
-            class="feature-btn active"
+            class="feature-btn"
+            data-feature-btn="active"
             data-target="card-pvp"
           >
             <span>PvP Battles</span>
@@ -417,7 +438,12 @@
             </div>
           </button>
 
-          <button type="button" class="feature-btn" data-target="card-kingdom">
+          <button
+            type="button"
+            class="feature-btn"
+            data-feature-btn="inactive"
+            data-target="card-kingdom"
+          >
             <span>Kingdom Management</span>
 
             <div class="scroll-icons">
@@ -431,7 +457,12 @@
             </div>
           </button>
 
-          <button type="button" class="feature-btn" data-target="card-alliance">
+          <button
+            type="button"
+            class="feature-btn"
+            data-feature-btn="inactive"
+            data-target="card-alliance"
+          >
             <span>Alliance System</span>
 
             <div class="scroll-icons">
@@ -445,7 +476,12 @@
             </div>
           </button>
 
-          <button type="button" class="feature-btn" data-target="card-progress">
+          <button
+            type="button"
+            class="feature-btn"
+            data-feature-btn="inactive"
+            data-target="card-progress"
+          >
             <span>Progression System</span>
 
             <div class="scroll-icons">
@@ -459,7 +495,12 @@
             </div>
           </button>
 
-          <button type="button" class="feature-btn" data-target="card-warfare">
+          <button
+            type="button"
+            class="feature-btn"
+            data-feature-btn="inactive"
+            data-target="card-warfare"
+          >
             <span>Large-Scale Warfare</span>
 
             <div class="scroll-icons">
@@ -755,7 +796,7 @@
       <use href="/STP-12571/assets/sprite-DTO1CddA.svg#icon-title"></use>
     </svg>
 
-    <div class="swiper gallery-wrapper">
+    <div class="swiper" data-gallery-wrapper>
       <div class="swiper-wrapper">
         <div class="swiper-slide gallery-slide">
           <picture>
@@ -846,7 +887,8 @@
     <div class="gallery-nav">
       <button
         type="button"
-        class="gallery-btn gallery-btn-prev"
+        class="gallery-btn"
+        data-gallery-btn-prev
         aria-label="Previous slide"
       >
         <svg class="gallery-arrow gallery-arrow-left" width="73" height="40">
@@ -854,11 +896,12 @@
         </svg>
       </button>
 
-      <div class="gallery-dots"></div>
+      <div class="gallery-dots" data-gallery-dots></div>
 
       <button
         type="button"
-        class="gallery-btn gallery-btn-next"
+        class="gallery-btn"
+        data-gallery-btn-next
         aria-label="Next slide"
       >
         <svg class="gallery-arrow gallery-arrow-right" width="73" height="40">
@@ -867,7 +910,7 @@
       </button>
     </div>
 
-    <div class="swiper gallery-thumbs">
+    <div class="swiper" data-gallery-thumbs>
       <div class="swiper-wrapper">
         <div class="swiper-slide gallery-thumb">
           <picture>
@@ -1077,8 +1120,8 @@
       </svg>
 
       <ul class="faq-list">
-        <li class="faq-item">
-          <button type="button" class="faq-btn">
+        <li class="faq-item" data-faq-item="inactive">
+          <button type="button" class="faq-btn" data-faq-btn>
             <div class="faq-content">
               <p class="faq-question">Is this a PvP game?</p>
               <div class="faq-answer">
@@ -1096,8 +1139,8 @@
           </button>
         </li>
 
-        <li class="faq-item">
-          <button type="button" class="faq-btn">
+        <li class="faq-item" data-faq-item="inactive">
+          <button type="button" class="faq-btn" data-faq-btn>
             <div class="faq-content">
               <p class="faq-question">Do alliances matter?</p>
               <div class="faq-answer">
@@ -1115,8 +1158,8 @@
           </button>
         </li>
 
-        <li class="faq-item">
-          <button type="button" class="faq-btn">
+        <li class="faq-item" data-faq-item="inactive">
+          <button type="button" class="faq-btn" data-faq-btn>
             <div class="faq-content">
               <p class="faq-question">Is there base building?</p>
               <div class="faq-answer">
@@ -1134,8 +1177,8 @@
           </button>
         </li>
 
-        <li class="faq-item">
-          <button type="button" class="faq-btn">
+        <li class="faq-item" data-faq-item="inactive">
+          <button type="button" class="faq-btn" data-faq-btn>
             <div class="faq-content">
               <p class="faq-question">Can I progress over time?</p>
               <div class="faq-answer">
@@ -1153,8 +1196,8 @@
           </button>
         </li>
 
-        <li class="faq-item">
-          <button type="button" class="faq-btn">
+        <li class="faq-item" data-faq-item="inactive">
+          <button type="button" class="faq-btn" data-faq-btn>
             <div class="faq-content">
               <p class="faq-question">Is it beginner-friendly?</p>
               <div class="faq-answer">
