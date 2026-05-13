@@ -10,7 +10,7 @@ const isDesktop = () => window.matchMedia('(min-width: 1440px)').matches;
 let galleryThumbs = null;
 
 if (isDesktop()) {
-  galleryThumbs = new Swiper('.gallery-thumbs', {
+  galleryThumbs = new Swiper('[data-gallery-thumbs]', {
     modules: [Thumbs],
     slidesPerView: 6,
     spaceBetween: 12,
@@ -18,21 +18,21 @@ if (isDesktop()) {
   });
 }
 
-const gallerySwiper = new Swiper('.gallery-wrapper', {
+const gallerySwiper = new Swiper('[data-gallery-wrapper]', {
   modules: [Navigation, Pagination, Thumbs],
   slidesPerView: 1,
   loop: true,
 
   navigation: {
-    prevEl: '.gallery-btn-prev',
-    nextEl: '.gallery-btn-next',
+    prevEl: '[data-gallery-btn-prev]',
+    nextEl: '[data-gallery-btn-next]',
   },
 
   pagination: {
-    el: '.gallery-dots',
+    el: '[data-gallery-dots]',
     clickable: true,
-    bulletClass: 'gallery-dot',
-    bulletActiveClass: 'active',
+    bulletClass: 'swiper-gallery-dot',
+    bulletActiveClass: 'swiper-gallery-active',
   },
 
   thumbs: {

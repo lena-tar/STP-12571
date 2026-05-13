@@ -7,7 +7,7 @@
       <use href="/img/sprite.svg#icon-title"></use>
     </svg>
 
-    <div class="swiper gallery-wrapper">
+    <div class="swiper" data-gallery-wrapper>
       <div class="swiper-wrapper">
         <div class="swiper-slide gallery-slide">
           <picture>
@@ -134,7 +134,8 @@
     <div class="gallery-nav">
       <button
         type="button"
-        class="gallery-btn gallery-btn-prev"
+        class="gallery-btn"
+        data-gallery-btn-prev
         aria-label="Previous slide"
       >
         <svg class="gallery-arrow gallery-arrow-left" width="73" height="40">
@@ -142,11 +143,12 @@
         </svg>
       </button>
 
-      <div class="gallery-dots"></div>
+      <div class="gallery-dots" data-gallery-dots></div>
 
       <button
         type="button"
-        class="gallery-btn gallery-btn-next"
+        class="gallery-btn"
+        data-gallery-btn-next
         aria-label="Next slide"
       >
         <svg class="gallery-arrow gallery-arrow-right" width="73" height="40">
@@ -155,7 +157,7 @@
       </button>
     </div>
 
-    <div class="swiper gallery-thumbs">
+    <div class="swiper" data-gallery-thumbs>
       <div class="swiper-wrapper">
         <div class="swiper-slide gallery-thumb">
           <picture>
