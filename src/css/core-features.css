@@ -73,12 +73,15 @@
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .feature-btn span {
   font-size: 21px;
   line-height: 136%;
   letter-spacing: 0.02em;
+  color: inherit;
 }
 
 .scroll-icons {
