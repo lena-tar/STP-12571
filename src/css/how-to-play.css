@@ -92,7 +92,7 @@
 
 @media only screen and (min-width: 1440px) {
   .how-to-play-container {
-    padding: 50px 0 20px 0;
+    padding: 50px 0 30px 0;
   }
   .how-to-play-title {
     max-width: 469px !important;
@@ -146,6 +146,6 @@
   }
   .how-to-play-list {
     column-gap: 100px;
-    row-gap: 12px;
+    row-gap: 24px;
   }
 }

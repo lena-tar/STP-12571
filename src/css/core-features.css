@@ -5,7 +5,7 @@
 .features-container {
   position: relative;
   min-height: 876px;
-  padding: 32px 0;
+  padding: 32px 0 22px;
 }
 
 .features-title,
@@ -184,7 +184,7 @@
 
 @media only screen and (min-width: 1440px) {
   .features-container {
-    padding: 50px 0;
+    padding: 50px 0 38px;
   }
 
   .features-title {

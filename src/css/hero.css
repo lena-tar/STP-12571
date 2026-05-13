@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
 
   height: 812px;
+  scroll-margin-top: 10px !important;
 }
 
 @media only screen and (min-resolution: 192dpi) {
@@ -100,6 +101,7 @@
   .hero-section {
     background-image: url(../img/hero/hero-desk.png);
     height: 850px;
+    scroll-margin-top: 20px !important;
   }
 
   @media only screen and (min-resolution: 192dpi) {
