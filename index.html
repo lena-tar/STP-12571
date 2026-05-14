@@ -18,9 +18,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/STP-12571/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/STP-12571/assets/styles-BU-5qkja.js">
+    <link rel="modulepreload" crossorigin href="/STP-12571/assets/styles-DpGBwnvy.js">
     <link rel="modulepreload" crossorigin href="/STP-12571/assets/vendor-Dq_ghqr5.js">
-    <link rel="stylesheet" crossorigin href="/STP-12571/assets/styles-BLa4gGB-.css">
+    <link rel="stylesheet" crossorigin href="/STP-12571/assets/styles-CA1hQl4F.css">
     <link rel="stylesheet" crossorigin href="/STP-12571/assets/vendor-CFqjEoZd.css">
   </head>
   <body>
@@ -47,7 +47,7 @@
             aria-label="opem mobile navigation"
             type="button"
             class="burger-btn"
-            data-open-mobnav
+            data-action="open-menu"
           >
             <svg class="burger-icon" width="40" height="40">
               <use href="/STP-12571/assets/sprite-DTO1CddA.svg#icon-burger-menu-open"></use>
@@ -66,19 +66,29 @@
             />
           </a>
           <ul class="nav-list-desktop">
-            <li class="menu-item-desktop"><a href="#home">Home</a></li>
-            <li class="menu-item-desktop"><a href="#concept">Concept</a></li>
-            <li class="menu-item-desktop">
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#home">Home</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#concept">Concept</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
               <a href="#how-to-play">How to Play</a>
             </li>
-            <li class="menu-item-desktop"><a href="#features">Features</a></li>
-            <li class="menu-item-desktop">
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#features">Features</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
               <a href="#commanders">Commanders</a>
             </li>
-            <li class="menu-item-desktop"><a href="#gallery">Gallery</a></li>
-            <li class="menu-item-desktop"><a href="#reviews">Reviews</a></li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#reviews">Reviews</a>
+            </li>
             <li class="menu-list-contacts">
-              <div class="contacts-item menu-item">
+              <div class="contacts-item menu-item" data-nav-item>
                 <img
                   srcset="data:image/png;base64,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 1x, /STP-12571/assets/kay_faq-2x-Bil4s9vU.png 2x"
                   src="data:image/png;base64,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"
@@ -974,7 +984,7 @@
           <use href="/STP-12571/assets/sprite-DTO1CddA.svg#icon-title"></use>
         </svg>
       </div>
-      <div class="swiper mySwiper">
+      <div class="swiper" id='reviews-swiper'>
         <ul class="swiper-wrapper player-reviews-list">
           <li class="swiper-slide">
             <div class="review-card">
@@ -1301,20 +1311,20 @@
   </div>
 </footer>
 
-    <div class="mob-nav" data-modal-mobnav>
+    <div class="mob-nav" data-visible="close">
   <div class="mob-nav-background">
     <div class="mob-container">
       <button
         aria-label="exit mobile navigation"
         class="close-mod"
         type="button"
-        data-close-mod
+        data-action="close-menu"
       >
         <svg class="close-ico" width="40" height="40">
           <use href="/STP-12571/assets/sprite-DTO1CddA.svg#icon-burger-menu-close"></use>
         </svg>
       </button>
-      <nav aria-label="mobile-navigation" class="mobil-menu">
+      <nav aria-label="mobile-navigation" class="mobil-menu" data-menu-links>
         <h2 class="nav-title">Menu</h2>
         <ul class="nav-list">
           <li class="menu-item"><a href="#home">Home</a></li>
