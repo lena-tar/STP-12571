@@ -19,13 +19,13 @@
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-nav.isopen {
+.mob-nav[data-visible='open'] {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-.mob-nav.isopen .mob-nav-background {
+.mob-nav[data-visible='open'] .mob-nav-background {
   transform: translateX(0);
 }
 
@@ -109,11 +109,8 @@ body.no-scroll {
 }
 
 @media only screen and (min-width: 1440px) {
-  .mob-nav {
-    display: none;
-  }
-
-  .mob-nav.isopen {
+  .mob-nav,
+  .mob-nav[data-visible='open'] {
     display: none;
   }
 }

@@ -112,7 +112,7 @@
   }
   .menu-item-desktop:hover,
   .menu-item-desktop:focus,
-  .menu-item-desktop.active,
+  .menu-item-desktop[data-state='active'],
   .menu-list-contacts div:hover,
   .menu-list-contacts div:focus {
     transform: scale(1.3);

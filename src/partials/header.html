@@ -24,7 +24,7 @@
             aria-label="opem mobile navigation"
             type="button"
             class="burger-btn"
-            data-open-mobnav
+            data-action="open-menu"
           >
             <svg class="burger-icon" width="40" height="40">
               <use href="./img/sprite.svg#icon-burger-menu-open"></use>
@@ -46,19 +46,29 @@
             />
           </a>
           <ul class="nav-list-desktop">
-            <li class="menu-item-desktop"><a href="#home">Home</a></li>
-            <li class="menu-item-desktop"><a href="#concept">Concept</a></li>
-            <li class="menu-item-desktop">
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#home">Home</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#concept">Concept</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
               <a href="#how-to-play">How to Play</a>
             </li>
-            <li class="menu-item-desktop"><a href="#features">Features</a></li>
-            <li class="menu-item-desktop">
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#features">Features</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
               <a href="#commanders">Commanders</a>
             </li>
-            <li class="menu-item-desktop"><a href="#gallery">Gallery</a></li>
-            <li class="menu-item-desktop"><a href="#reviews">Reviews</a></li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li class="menu-item-desktop" data-nav-item>
+              <a href="#reviews">Reviews</a>
+            </li>
             <li class="menu-list-contacts">
-              <div class="contacts-item menu-item">
+              <div class="contacts-item menu-item" data-nav-item>
                 <img
                   srcset="
                     /img/header/header-nav/kay_faq-1x.png 1x,
