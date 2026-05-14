@@ -1,26 +1,27 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-open-mobnav]'),
-    closeModalBtn: document.querySelector('[data-close-mod]'),
-    modal: document.querySelector('[data-modal-mobnav]'),
-    menuLinks: document.querySelectorAll('[data-modal-mobnav] a'),
-  };
+  const openBtnEl = document.querySelector('[data-action="open-menu"]');
+  const closeBtnEl = document.querySelector('[data-action="close-menu"]');
+  const burgerMenuEl = document.querySelector('[data-visible]');
+  const menuLinks = document.querySelectorAll('[data-menu-links] a');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-  refs.modal.addEventListener('click', onBackdropClick);
-
-  refs.menuLinks.forEach(link => {
-    link.addEventListener('click', toggleModal);
-  });
-
-  function toggleModal() {
-    refs.modal.classList.toggle('isopen');
-  }
-
-  function onBackdropClick(event) {
-    if (event.target === refs.modal) {
-      toggleModal();
+  function changeMenuState(state) {
+    burgerMenuEl.dataset.visible = state;
+    if (state === 'open') {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
     }
   }
+
+  openBtnEl.addEventListener('click', () => changeMenuState('open'));
+  closeBtnEl.addEventListener('click', () => changeMenuState('close'));
+
+  burgerMenuEl.addEventListener('click', event => {
+    if (event.target === burgerMenuEl) {
+      changeMenuState('close');
+    }
+  });
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => changeMenuState('close'));
+  });
 })();

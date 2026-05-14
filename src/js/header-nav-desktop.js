@@ -1,7 +1,5 @@
 const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll(
-  '.menu-item-desktop, .menu-list-contacts div'
-);
+const navItems = document.querySelectorAll('[data-nav-item]');
 
 const observerOptions = {
   threshold: 0.3,
@@ -20,9 +18,9 @@ const observer = new IntersectionObserver(entries => {
         const href = link.getAttribute('href').replace('#', '');
 
         if (href === sectionId) {
-          item.classList.add('active');
+          item.dataset.state = 'active';
         } else {
-          item.classList.remove('active');
+          delete item.dataset.state;
         }
       });
     }

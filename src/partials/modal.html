@@ -1,17 +1,17 @@
-<div class="mob-nav" data-modal-mobnav>
+<div class="mob-nav" data-visible="close">
   <div class="mob-nav-background">
     <div class="mob-container">
       <button
         aria-label="exit mobile navigation"
         class="close-mod"
         type="button"
-        data-close-mod
+        data-action="close-menu"
       >
         <svg class="close-ico" width="40" height="40">
           <use href="/img/sprite.svg#icon-burger-menu-close"></use>
         </svg>
       </button>
-      <nav aria-label="mobile-navigation" class="mobil-menu">
+      <nav aria-label="mobile-navigation" class="mobil-menu" data-menu-links>
         <h2 class="nav-title">Menu</h2>
         <ul class="nav-list">
           <li class="menu-item"><a href="#home">Home</a></li>
