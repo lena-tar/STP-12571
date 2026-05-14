@@ -119,12 +119,12 @@
   }
   .how-to-play-card:hover,
   .how-to-play-card:focus {
-    transform: translateX(215px) scale(1.05) !important;
+    transform: translateX(215px) scale(1.1) !important;
     z-index: 10;
   }
   .how-to-play-card:nth-child(odd):hover,
   .how-to-play-card:nth-child(odd):focus {
-    transform: scale(1.05) !important;
+    transform: scale(1.1) !important;
     z-index: 10;
   }
   .how-to-play-card-img {
